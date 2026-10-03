@@ -27,7 +27,7 @@
 
   var links = Array.prototype.slice.call(document.querySelectorAll(".nav-links a"));
   if ("IntersectionObserver" in window && links.length) {
-    var obs = new IntersectionObserver(function (entries) {
+    var navObs = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
         var id = entry.target.id;
@@ -36,6 +36,21 @@
         });
       });
     }, { rootMargin: "-40% 0px -55% 0px" });
-    document.querySelectorAll("section[id]").forEach(function (s) { obs.observe(s); });
+    document.querySelectorAll("section[id]").forEach(function (s) { navObs.observe(s); });
+  }
+
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  if ("IntersectionObserver" in window && revealEls.length) {
+    var revObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          revObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { revObs.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("in"); });
   }
 })();

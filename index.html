@@ -4,25 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Schneider Jiménez — Machine Learning Engineer & Data Analyst</title>
-  <meta name="description" content="Portfolio of John Schneider Jiménez — Machine Learning Engineer and Data Analyst. Python, SQL, Power BI, scikit-learn. Projects in ML, data pipelines and dashboards.">
+  <meta name="description" content="Portfolio of John Schneider Jiménez — Machine Learning Engineer and Data Analyst. Python, SQL, Power BI, scikit-learn. ML models, data pipelines and dashboards that turn data into decisions.">
   <meta property="og:title" content="John Schneider Jiménez — Machine Learning Engineer & Data Analyst">
-  <meta property="og:description" content="Portfolio — ML projects, data pipelines and dashboards. Python · SQL · Power BI · scikit-learn.">
+  <meta property="og:description" content="ML models, data pipelines and dashboards that turn data into decisions. Python · SQL · Power BI · scikit-learn.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://johnschneiider.github.io/assets/profile.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <div class="topline" aria-hidden="true"></div>
+
   <header class="nav">
     <div class="nav-inner">
-      <a href="#hero" class="logo">JS<span class="dot">.</span></a>
+      <a href="#top" class="brand">
+        <span class="brand-mark">JS</span>
+        <span class="brand-name">John&nbsp;Schneider</span>
+      </a>
       <nav class="nav-links">
         <a href="#about" data-en="About" data-es="Sobre mí">About</a>
-        <a href="#skills" data-en="Skills" data-es="Skills">Skills</a>
-        <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
+        <a href="#services" data-en="Services" data-es="Servicios">Services</a>
         <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
         <a href="#education" data-en="Education" data-es="Formación">Education</a>
         <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
       </nav>
@@ -30,35 +37,57 @@
     </div>
   </header>
 
-  <main>
+  <main id="top">
 
     <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-inner">
-        <p class="hello" data-en="Hi, my name is" data-es="Hola, mi nombre es">Hi, my name is</p>
-        <h1 class="hero-name">John Schneider <span class="grad">Jiménez</span></h1>
-        <h2 class="hero-role" data-en="Machine Learning Engineer · Data Analyst" data-es="Ingeniero de Machine Learning · Analista de Datos">Machine Learning Engineer · Data Analyst</h2>
-        <p class="hero-tagline"
-           data-en="I build machine learning models, data pipelines and dashboards that turn raw data into decisions. 2+ years analyzing data, based in Cali, Colombia — open to remote work."
-           data-es="Construyo modelos de machine learning, pipelines de datos y dashboards que convierten datos crudos en decisiones. Más de 2 años analizando datos, con base en Cali (Colombia) — abierto a trabajo remoto.">
-          I build machine learning models, data pipelines and dashboards that turn raw data into decisions. 2+ years analyzing data, based in Cali, Colombia — open to remote work.
-        </p>
-        <div class="hero-cta">
-          <a class="btn primary" href="#projects" data-en="View my projects" data-es="Ver mis proyectos">View my projects</a>
-          <a class="btn ghost" href="#contact" data-en="Get in touch" data-es="Escríbeme">Get in touch</a>
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-en="Machine Learning Engineer · Data Analyst" data-es="Ingeniero de Machine Learning · Analista de Datos">Machine Learning Engineer · Data Analyst</p>
+          <h1 class="hero-name">John Schneider <em>Jiménez</em></h1>
+          <p class="hero-lead"
+             data-en="I turn raw data into decisions — machine learning models, analytics dashboards and automated pipelines that companies can rely on. Based in Cali, Colombia; open to remote work."
+             data-es="Convierto datos crudos en decisiones — modelos de machine learning, dashboards analíticos y pipelines automatizados en los que una empresa puede confiar. Con base en Cali, Colombia; abierto a trabajo remoto.">
+            I turn raw data into decisions — machine learning models, analytics dashboards and automated pipelines that companies can rely on. Based in Cali, Colombia; open to remote work.
+          </p>
+          <div class="hero-cta">
+            <a class="btn gold" href="#projects" data-en="View selected work" data-es="Ver proyectos">View selected work</a>
+            <a class="btn line" href="#contact" data-en="Get in touch" data-es="Hablemos">Get in touch</a>
+          </div>
+          <p class="availability"><span class="pulse" aria-hidden="true"></span><span data-en="Available for new opportunities" data-es="Disponible para nuevas oportunidades">Available for new opportunities</span></p>
+          <dl class="stats">
+            <div><dt data-en="Years in data" data-es="Años en datos">Years in data</dt><dd>2+</dd></div>
+            <div><dt data-en="Public repositories" data-es="Repositorios públicos">Public repositories</dt><dd>17</dd></div>
+            <div><dt data-en="Featured projects" data-es="Proyectos destacados">Featured projects</dt><dd>8</dd></div>
+          </dl>
         </div>
-        <ul class="hero-stack" aria-label="Main stack">
-          <li>Python</li><li>SQL</li><li>Power BI</li><li>scikit-learn</li><li>FastAPI</li>
-        </ul>
+        <div class="hero-photo reveal">
+          <figure class="portrait">
+            <img src="assets/profile.jpg" alt="John Schneider Jiménez" width="460" height="460">
+          </figure>
+          <div class="photo-badge">
+            <span class="photo-badge-k" data-en="Focus" data-es="Enfoque">Focus</span>
+            <span class="photo-badge-v">ML · Analytics · BI</span>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Python</span><i>·</i><span>SQL</span><i>·</i><span>Power BI</span><i>·</i><span>scikit-learn</span><i>·</i><span>XGBoost</span><i>·</i><span>Power Automate</span><i>·</i><span>FastAPI</span><i>·</i><span>PostgreSQL</span><i>·</i><span>Django</span><i>·</i><span>Git</span><i>·</i>
+          <span>Python</span><i>·</i><span>SQL</span><i>·</i><span>Power BI</span><i>·</i><span>scikit-learn</span><i>·</i><span>XGBoost</span><i>·</i><span>Power Automate</span><i>·</i><span>FastAPI</span><i>·</i><span>PostgreSQL</span><i>·</i><span>Django</span><i>·</i><span>Git</span><i>·</i>
+        </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
-      <h2 class="sec-title" data-en="About me" data-es="Sobre mí">About me</h2>
+      <header class="sec-head reveal">
+        <span class="sec-kicker">01</span>
+        <h2 class="sec-title" data-en="About me" data-es="Sobre mí">About me</h2>
+      </header>
       <div class="about-grid">
-        <div class="about-text">
+        <div class="about-text reveal">
           <p data-en="I'm a data professional and a Data Science &amp; AI Engineering student at Universidad San Mateo. For 2+ years I've been turning messy datasets into clear answers: dashboards, automated reports, SQL models and machine learning pipelines."
              data-es="Soy un profesional de datos y estudiante de Ingeniería en Ciencia de Datos e IA en la Universidad San Mateo. Durante más de 2 años he convertido datasets desordenados en respuestas claras: dashboards, reportes automatizados, modelos en SQL y pipelines de machine learning.">
             I'm a data professional and a Data Science &amp; AI Engineering student at Universidad San Mateo. For 2+ years I've been turning messy datasets into clear answers: dashboards, automated reports, SQL models and machine learning pipelines.
@@ -68,25 +97,69 @@
             My comfort zone is Python + SQL, advanced Power BI / Excel / Power Automate, and ML models with scikit-learn, XGBoost and LightGBM deployed behind FastAPI. I care about reproducibility, clean code and measurable impact.
           </p>
         </div>
-        <aside class="about-facts">
-          <div class="fact"><span class="fact-k" data-en="Based in" data-es="Ubicación">Based in</span><span class="fact-v" data-en="Cali, Colombia (remote OK)" data-es="Cali, Colombia (remoto OK)">Cali, Colombia (remote OK)</span></div>
+        <aside class="about-facts reveal">
+          <div class="fact"><span class="fact-k" data-en="Based in" data-es="Ubicación">Based in</span><span class="fact-v" data-en="Cali, Colombia · remote OK" data-es="Cali, Colombia · remoto OK">Cali, Colombia · remote OK</span></div>
           <div class="fact"><span class="fact-k" data-en="Experience" data-es="Experiencia">Experience</span><span class="fact-v" data-en="2+ years in data analysis" data-es="2+ años en análisis de datos">2+ years in data analysis</span></div>
           <div class="fact"><span class="fact-k" data-en="Languages" data-es="Idiomas">Languages</span><span class="fact-v" data-en="Spanish (native) · English (intermediate)" data-es="Español (nativo) · Inglés (intermedio)">Spanish (native) · English (intermediate)</span></div>
-          <div class="fact"><span class="fact-k" data-en="Focus" data-es="Enfoque">Focus</span><span class="fact-v" data-en="ML engineering · analytics · BI" data-es="Ingeniería ML · analítica · BI">ML engineering · analytics · BI</span></div>
+          <div class="fact"><span class="fact-k" data-en="Focus" data-es="Enfoque">Focus</span><span class="fact-v">ML engineering · analytics · BI</span></div>
         </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <header class="sec-head reveal">
+        <span class="sec-kicker">02</span>
+        <h2 class="sec-title" data-en="How I can help" data-es="Cómo puedo aportar">How I can help</h2>
+        <p class="sec-sub" data-en="From raw data to production-ready results." data-es="De los datos crudos a resultados listos para producción.">From raw data to production-ready results.</p>
+      </header>
+      <div class="services-grid">
+        <article class="service reveal">
+          <span class="service-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a3 3 0 0 0-3 3v.5a3 3 0 0 0-3 3A3 3 0 0 0 4.5 12 3 3 0 0 0 6 14.5 3 3 0 0 0 9 18h.5A3 3 0 0 0 12 21a3 3 0 0 0 3-3v-.5a3 3 0 0 0 3-3 3 3 0 0 0 1.5-2.5A3 3 0 0 0 18 9.5 3 3 0 0 0 15 6h-.5A3 3 0 0 0 12 3Z"/><path d="M12 3v18"/></svg>
+          </span>
+          <h3 data-en="Machine Learning Models" data-es="Modelos de Machine Learning">Machine Learning Models</h3>
+          <p data-en="End-to-end predictive models: data preparation, feature engineering, training, evaluation and deployment with scikit-learn, XGBoost and LightGBM."
+             data-es="Modelos predictivos de punta a punta: preparación de datos, ingeniería de variables, entrenamiento, evaluación y despliegue con scikit-learn, XGBoost y LightGBM.">
+            End-to-end predictive models: data preparation, feature engineering, training, evaluation and deployment with scikit-learn, XGBoost and LightGBM.
+          </p>
+        </article>
+        <article class="service reveal">
+          <span class="service-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6" rx=".5"/><rect x="12" y="8" width="3" height="10" rx=".5"/><rect x="17" y="5" width="3" height="13" rx=".5"/></svg>
+          </span>
+          <h3 data-en="Dashboards &amp; Analytics" data-es="Dashboards y Analítica">Dashboards &amp; Analytics</h3>
+          <p data-en="KPIs, executive dashboards and automated reports in Power BI and Excel that make performance visible, measurable and easy to act on."
+             data-es="KPIs, dashboards ejecutivos y reportes automatizados en Power BI y Excel que hacen el desempeño visible, medible y fácil de accionar.">
+            KPIs, executive dashboards and automated reports in Power BI and Excel that make performance visible, measurable and easy to act on.
+          </p>
+        </article>
+        <article class="service reveal">
+          <span class="service-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+          </span>
+          <h3 data-en="Automation &amp; APIs" data-es="Automatización y APIs">Automation &amp; APIs</h3>
+          <p data-en="SQL pipelines, Python automations and FastAPI services that remove manual work, reduce errors and connect the systems you already use."
+             data-es="Pipelines SQL, automatizaciones en Python y servicios FastAPI que eliminan trabajo manual, reducen errores y conectan los sistemas que ya usas.">
+            SQL pipelines, Python automations and FastAPI services that remove manual work, reduce errors and connect the systems you already use.
+          </p>
+        </article>
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2 class="sec-title" data-en="Skills" data-es="Skills">Skills</h2>
-      <div class="skills-grid">
+      <header class="sec-head reveal">
+        <span class="sec-kicker">03</span>
+        <h2 class="sec-title" data-en="Technical toolkit" data-es="Caja de herramientas">Technical toolkit</h2>
+      </header>
+      <div class="skills-grid reveal">
         <div class="skill-block">
           <h3 data-en="Languages" data-es="Lenguajes">Languages</h3>
           <ul class="chips"><li>Python</li><li>SQL</li><li>JavaScript</li><li>HTML / CSS</li></ul>
         </div>
         <div class="skill-block">
-          <h3 data-en="Data &amp; BI" data-es="Datos &amp; BI">Data &amp; BI</h3>
+          <h3 data-en="Data &amp; BI" data-es="Datos y BI">Data &amp; BI</h3>
           <ul class="chips"><li>Power BI</li><li>Excel (adv.)</li><li>Power Automate</li><li>pandas</li><li>NumPy</li><li>Jupyter</li></ul>
         </div>
         <div class="skill-block">
@@ -94,17 +167,116 @@
           <ul class="chips"><li>scikit-learn</li><li>XGBoost</li><li>LightGBM</li><li>Feature Engineering</li><li>Model Evaluation</li></ul>
         </div>
         <div class="skill-block">
-          <h3 data-en="Backend &amp; Databases" data-es="Backend &amp; Bases de datos">Backend &amp; Databases</h3>
+          <h3 data-en="Backend &amp; Databases" data-es="Backend y Bases de Datos">Backend &amp; Databases</h3>
           <ul class="chips"><li>FastAPI</li><li>Django</li><li>PostgreSQL</li><li>SQL Server</li><li>MongoDB</li><li>Git</li></ul>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <header class="sec-head reveal">
+        <span class="sec-kicker">04</span>
+        <h2 class="sec-title" data-en="Selected projects" data-es="Proyectos seleccionados">Selected projects</h2>
+        <p class="sec-sub" data-en="Real, shipped work — every repository is public on GitHub." data-es="Trabajo real y publicado — todos los repositorios son públicos en GitHub.">Real, shipped work — every repository is public on GitHub.</p>
+      </header>
+      <div class="projects-grid">
+
+        <a class="card feat reveal" href="https://github.com/johnschneiider/Predicta---Modelo-de-Prediccion" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">01</span><span class="card-arrow">&#8599;</span></div>
+          <h3>Predicta</h3>
+          <p data-en="AI football prediction system: an ensemble of Poisson and historical models that forecasts shots, goals and corners, served through a Django dashboard with Betfair / Odds API integration."
+             data-es="Sistema de predicción de fútbol con IA: un ensamble de modelos Poisson y promedios históricos que pronostica remates, goles y córners, servido en un dashboard Django con integración a APIs Betfair / Odds.">
+            AI football prediction system: an ensemble of Poisson and historical models that forecasts shots, goals and corners, served through a Django dashboard with Betfair / Odds API integration.
+          </p>
+          <ul class="tags"><li>Django</li><li>scikit-learn</li><li>PostgreSQL</li><li>Bootstrap</li></ul>
+        </a>
+
+        <a class="card feat reveal" href="https://github.com/johnschneiider/binabot" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">02</span><span class="card-arrow">&#8599;</span></div>
+          <h3>binabot</h3>
+          <p data-en="Quantitative Binance Futures bot with an ML gate (LightGBM + XGBoost ensemble over 60 features). Out-of-sample win rate up to 72.5% vs a 38.6% baseline, with risk circuit-breakers."
+             data-es="Bot cuantitativo de Binance Futures con puerta ML (ensamble LightGBM + XGBoost sobre 60 variables). Win rate fuera de muestra hasta 72,5% vs 38,6% de línea base, con circuit-breakers de riesgo.">
+            Quantitative Binance Futures bot with an ML gate (LightGBM + XGBoost ensemble over 60 features). Out-of-sample win rate up to 72.5% vs a 38.6% baseline, with risk circuit-breakers.
+          </p>
+          <ul class="tags"><li>Python</li><li>LightGBM</li><li>XGBoost</li><li>Django</li></ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/johnschneiider/Bocado" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">03</span><span class="card-arrow">&#8599;</span></div>
+          <h3>Bocado</h3>
+          <p data-en="Food-ordering platform (SaaS + restaurants) in the style of Didifood: public storefront, daily menus, orders, credits and a KPI dashboard. Django + HTMX + PostgreSQL."
+             data-es="Plataforma de pedidos de comida (SaaS + restaurantes) estilo Didifood: vitrina pública, menús del día, pedidos, créditos y dashboard de KPIs. Django + HTMX + PostgreSQL.">
+            Food-ordering platform (SaaS + restaurants) in the style of Didifood: public storefront, daily menus, orders, credits and a KPI dashboard. Django + HTMX + PostgreSQL.
+          </p>
+          <ul class="tags"><li>Django</li><li>HTMX</li><li>PostgreSQL</li></ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/johnschneiider/AutoTraderML-machine-learning-aplicado-al-trading" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">04</span><span class="card-arrow">&#8599;</span></div>
+          <h3>AutoTraderML</h3>
+          <p data-en="Machine learning applied to trading: automated strategies on synthetic indices, with backtesting and model performance evaluation."
+             data-es="Machine learning aplicado al trading: estrategias automatizadas en índices sintéticos, con backtesting y evaluación del rendimiento de los modelos.">
+            Machine learning applied to trading: automated strategies on synthetic indices, with backtesting and model performance evaluation.
+          </p>
+          <ul class="tags"><li>Python</li><li>ML</li><li>Backtesting</li></ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/johnschneiider/GeoTransporte" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">05</span><span class="card-arrow">&#8599;</span></div>
+          <h3>GeoTransporte</h3>
+          <p data-en="Delivery route prioritization app with an interactive map — geo-analysis to decide which orders go out first."
+             data-es="App para priorizar rutas de entrega con mapa interactivo — geo-análisis para decidir qué pedidos salen primero.">
+            Delivery route prioritization app with an interactive map — geo-analysis to decide which orders go out first.
+          </p>
+          <ul class="tags"><li>JavaScript</li><li>Maps</li><li>GeoAnalysis</li></ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/johnschneiider/APPO-Booking-para-Barberias" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">06</span><span class="card-arrow">&#8599;</span></div>
+          <h3>APPO Booking</h3>
+          <p data-en="Appointment manager for barbershops and salons: online bookings, availability and reminders."
+             data-es="Gestor de turnos para peluquerías y barberías: reservas en línea, disponibilidad y recordatorios.">
+            Appointment manager for barbershops and salons: online bookings, availability and reminders.
+          </p>
+          <ul class="tags"><li>Python</li><li>Scheduling</li><li>Web</li></ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/johnschneiider/Scripts-SQLServer" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">07</span><span class="card-arrow">&#8599;</span></div>
+          <h3>Scripts-SQLServer</h3>
+          <p data-en="Curated library of the SQL Server scripts I use daily: diagnostics, performance, maintenance and reporting queries."
+             data-es="Biblioteca curada de los scripts de SQL Server que uso a diario: diagnósticos, rendimiento, mantenimiento y consultas de reportes.">
+            Curated library of the SQL Server scripts I use daily: diagnostics, performance, maintenance and reporting queries.
+          </p>
+          <ul class="tags"><li>SQL</li><li>SQL Server</li></ul>
+        </a>
+
+        <a class="card reveal" href="https://github.com/johnschneiider/Mesen-app-inteligente-gesti-n-de-pedidos" target="_blank" rel="noopener">
+          <div class="card-top"><span class="card-num">08</span><span class="card-arrow">&#8599;</span></div>
+          <h3>Mesén</h3>
+          <p data-en="Smart order-management app: track, organize and follow up on orders from one place."
+             data-es="App inteligente de gestión de pedidos: rastrea, organiza y da seguimiento a los pedidos desde un solo lugar.">
+            Smart order-management app: track, organize and follow up on orders from one place.
+          </p>
+          <ul class="tags"><li>HTML</li><li>JavaScript</li><li>App</li></ul>
+        </a>
+
+      </div>
+      <p class="more-repos reveal">
+        <a href="https://github.com/johnschneiider?tab=repositories" target="_blank" rel="noopener"
+           data-en="See all 17 repositories on GitHub" data-es="Ver los 17 repositorios en GitHub">See all 17 repositories on GitHub</a>
+      </p>
+    </section>
+
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
-      <h2 class="sec-title" data-en="Experience" data-es="Experiencia">Experience</h2>
-      <article class="timeline">
-        <div class="tl-dot"></div>
+      <header class="sec-head reveal">
+        <span class="sec-kicker">05</span>
+        <h2 class="sec-title" data-en="Experience" data-es="Experiencia">Experience</h2>
+      </header>
+      <article class="timeline reveal">
+        <div class="tl-rail" aria-hidden="true"><span class="tl-dot"></span></div>
         <div class="tl-body">
           <header class="tl-head">
             <div>
@@ -127,129 +299,38 @@
       </article>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2 class="sec-title" data-en="Featured projects" data-es="Proyectos destacados">Featured projects</h2>
-      <p class="sec-sub" data-en="All repositories are public on GitHub."
-         data-es="Todos los repositorios son públicos en GitHub.">All repositories are public on GitHub.</p>
-      <div class="projects-grid">
-
-        <a class="card" href="https://github.com/johnschneiider/Predicta---Modelo-de-Prediccion" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">01</span><span class="card-arrow">&#8599;</span></div>
-          <h3>Predicta</h3>
-          <p data-en="AI football prediction system: an ensemble of Poisson and historical models that forecasts shots, goals and corners, with a Django dashboard and Betfair / Odds API integration."
-             data-es="Sistema de predicción de fútbol con IA: un ensamble de modelos Poisson y promedios históricos que predice remates, goles y córners, con dashboard en Django e integración de APIs Betfair / Odds.">
-            AI football prediction system: an ensemble of Poisson and historical models that forecasts shots, goals and corners, with a Django dashboard and Betfair / Odds API integration.
-          </p>
-          <ul class="tags"><li>Django</li><li>scikit-learn</li><li>PostgreSQL</li><li>Bootstrap</li></ul>
-        </a>
-
-        <a class="card" href="https://github.com/johnschneiider/binabot" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">02</span><span class="card-arrow">&#8599;</span></div>
-          <h3>binabot</h3>
-          <p data-en="Quantitative Binance Futures bot with an ML gate (LightGBM + XGBoost ensemble over 60 features). Out-of-sample win rate up to 72.5% vs a 38.6% baseline, with risk circuit-breakers."
-             data-es="Bot cuantitativo de Binance Futures con puerta ML (ensamble LightGBM + XGBoost sobre 60 features). Win rate fuera de muestra hasta 72,5% vs 38,6% de línea base, con circuit-breakers de riesgo.">
-            Quantitative Binance Futures bot with an ML gate (LightGBM + XGBoost ensemble over 60 features). Out-of-sample win rate up to 72.5% vs a 38.6% baseline, with risk circuit-breakers.
-          </p>
-          <ul class="tags"><li>Python</li><li>LightGBM</li><li>XGBoost</li><li>Django</li></ul>
-        </a>
-
-        <a class="card" href="https://github.com/johnschneiider/AutoTraderML-machine-learning-aplicado-al-trading" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">03</span><span class="card-arrow">&#8599;</span></div>
-          <h3>AutoTraderML</h3>
-          <p data-en="Machine learning applied to trading: automated strategies on synthetic indices, with backtesting and evaluation of model performance."
-             data-es="Machine learning aplicado al trading: estrategias automatizadas en índices sintéticos, con backtesting y evaluación del rendimiento de los modelos.">
-            Machine learning applied to trading: automated strategies on synthetic indices, with backtesting and evaluation of model performance.
-          </p>
-          <ul class="tags"><li>Python</li><li>ML</li><li>Backtesting</li></ul>
-        </a>
-
-        <a class="card" href="https://github.com/johnschneiider/GeoTransporte" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">04</span><span class="card-arrow">&#8599;</span></div>
-          <h3>GeoTransporte</h3>
-          <p data-en="Delivery route prioritization app with an interactive map — geo-analysis to decide which orders go out first."
-             data-es="App para priorizar rutas de entrega con mapa interactivo — geo-análisis para decidir qué pedidos salen primero.">
-            Delivery route prioritization app with an interactive map — geo-analysis to decide which orders go out first.
-          </p>
-          <ul class="tags"><li>JavaScript</li><li>Maps</li><li>GeoAnalysis</li></ul>
-        </a>
-
-        <a class="card" href="https://github.com/johnschneiider/Bocado" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">05</span><span class="card-arrow">&#8599;</span></div>
-          <h3>Bocado</h3>
-          <p data-en="Food-ordering platform (SaaS + restaurants) in the style of Didifood: public storefront, daily menus, orders, credits and a KPI dashboard. Django + HTMX + PostgreSQL."
-             data-es="Plataforma de pedidos de comida (SaaS + restaurantes) estilo Didifood: vitrina pública, menús del día, pedidos, créditos y dashboard de KPIs. Django + HTMX + PostgreSQL.">
-            Food-ordering platform (SaaS + restaurants) in the style of Didifood: public storefront, daily menus, orders, credits and a KPI dashboard. Django + HTMX + PostgreSQL.
-          </p>
-          <ul class="tags"><li>Django</li><li>HTMX</li><li>PostgreSQL</li></ul>
-        </a>
-
-        <a class="card" href="https://github.com/johnschneiider/APPO-Booking-para-Barberias" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">06</span><span class="card-arrow">&#8599;</span></div>
-          <h3>APPO Booking</h3>
-          <p data-en="Appointment manager for barbershops and salons: online bookings, availability and reminders."
-             data-es="Gestor de turnos para peluquerías y barberías: reservas en línea, disponibilidad y recordatorios.">
-            Appointment manager for barbershops and salons: online bookings, availability and reminders.
-          </p>
-          <ul class="tags"><li>Python</li><li>Scheduling</li><li>Web</li></ul>
-        </a>
-
-        <a class="card" href="https://github.com/johnschneiider/Scripts-SQLServer" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">07</span><span class="card-arrow">&#8599;</span></div>
-          <h3>Scripts-SQLServer</h3>
-          <p data-en="Curated library of the SQL Server scripts I use daily: diagnostics, performance, maintenance and reporting queries."
-             data-es="Biblioteca curada de los scripts de SQL Server que uso a diario: diagnósticos, rendimiento, mantenimiento y consultas de reportes.">
-            Curated library of the SQL Server scripts I use daily: diagnostics, performance, maintenance and reporting queries.
-          </p>
-          <ul class="tags"><li>SQL</li><li>SQL Server</li></ul>
-        </a>
-
-        <a class="card" href="https://github.com/johnschneiider/Mesen-app-inteligente-gesti-n-de-pedidos" target="_blank" rel="noopener">
-          <div class="card-top"><span class="card-num">08</span><span class="card-arrow">&#8599;</span></div>
-          <h3>Mesén</h3>
-          <p data-en="Smart order-management app: track, organize and follow up on orders from one place."
-             data-es="App inteligente de gestión de pedidos: rastrea, organiza y da seguimiento a los pedidos desde un solo lugar.">
-            Smart order-management app: track, organize and follow up on orders from one place.
-          </p>
-          <ul class="tags"><li>HTML</li><li>JavaScript</li><li>App</li></ul>
-        </a>
-
-      </div>
-      <p class="more-repos">
-        <a href="https://github.com/johnschneiider?tab=repositories" target="_blank" rel="noopener"
-           data-en="See all 17 repositories on GitHub →" data-es="Ver los 17 repositorios en GitHub →">See all 17 repositories on GitHub →</a>
-      </p>
-    </section>
-
     <!-- EDUCATION -->
     <section id="education" class="section">
-      <h2 class="sec-title" data-en="Education &amp; certificates" data-es="Formación y certificados">Education &amp; certificates</h2>
+      <header class="sec-head reveal">
+        <span class="sec-kicker">06</span>
+        <h2 class="sec-title" data-en="Education &amp; certificates" data-es="Formación y certificados">Education &amp; certificates</h2>
+      </header>
       <div class="edu-grid">
-        <article class="edu-card">
+        <article class="edu-card reveal">
           <span class="edu-type" data-en="University" data-es="Universidad">University</span>
           <h3 data-en="B.S. Data Science &amp; AI Engineering" data-es="Ing. Ciencia de Datos e Inteligencia Artificial">B.S. Data Science &amp; AI Engineering</h3>
           <p>Universidad San Mateo</p>
           <span class="edu-status" data-en="In progress" data-es="En curso">In progress</span>
         </article>
-        <article class="edu-card">
+        <article class="edu-card reveal">
           <span class="edu-type" data-en="Certificate" data-es="Certificado">Certificate</span>
           <h3>Google AI Professional Certificate</h3>
           <p>Coursera · Google</p>
           <span class="edu-status ok" data-en="Completed 2026" data-es="Completado 2026">Completed 2026</span>
         </article>
-        <article class="edu-card">
+        <article class="edu-card reveal">
           <span class="edu-type" data-en="Certificate" data-es="Certificado">Certificate</span>
           <h3>IBM RAG &amp; Agentic AI Professional Certificate</h3>
           <p>Coursera · IBM</p>
           <span class="edu-status ok" data-en="Completed 2026" data-es="Completado 2026">Completed 2026</span>
         </article>
-        <article class="edu-card">
+        <article class="edu-card reveal">
           <span class="edu-type" data-en="Certificate" data-es="Certificado">Certificate</span>
           <h3>IBM Data Analyst Professional Certificate</h3>
           <p>Coursera · IBM</p>
           <span class="edu-status" data-en="In progress" data-es="En curso">In progress</span>
         </article>
-        <article class="edu-card">
+        <article class="edu-card reveal">
           <span class="edu-type" data-en="Certificate" data-es="Certificado">Certificate</span>
           <h3>Google Project Management Professional Certificate</h3>
           <p>Coursera · Google</p>
@@ -259,23 +340,27 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <h2 class="sec-title" data-en="Let's connect" data-es="Conectemos">Let's connect</h2>
-      <p class="contact-text"
-         data-en="Open to data &amp; machine learning opportunities — remote or Cali-based. The fastest way to reach me is LinkedIn."
-         data-es="Disponible para oportunidades de datos y machine learning — remotas o en Cali. La vía más rápida de contacto es LinkedIn.">
-        Open to data &amp; machine learning opportunities — remote or Cali-based. The fastest way to reach me is LinkedIn.
-      </p>
-      <div class="contact-btns">
-        <a class="btn primary" href="https://www.linkedin.com/in/john-schneider-a192a2194/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/johnschneiider" target="_blank" rel="noopener">GitHub</a>
+    <section id="contact" class="section">
+      <div class="contact-panel reveal">
+        <span class="sec-kicker">07</span>
+        <h2 class="contact-title" data-en="Let's build something together" data-es="Construyamos algo juntos">Let's build something together</h2>
+        <p class="contact-text"
+           data-en="Open to data &amp; machine learning roles and consulting — remote or Cali-based. The fastest way to reach me is LinkedIn."
+           data-es="Disponible para roles y consultoría de datos y machine learning — remoto o en Cali. La vía más rápida de contacto es LinkedIn.">
+          Open to data &amp; machine learning roles and consulting — remote or Cali-based. The fastest way to reach me is LinkedIn.
+        </p>
+        <div class="contact-btns">
+          <a class="btn gold" href="https://www.linkedin.com/in/john-schneider-a192a2194/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn line" href="https://github.com/johnschneiider" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="contact-meta">Cali, Colombia · UTC-5</p>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <p>© <span id="year">2026</span> John Schneider Jiménez — <span data-en="built with plain HTML, CSS &amp; JS" data-es="hecho con HTML, CSS &amp; JS puros">built with plain HTML, CSS &amp; JS</span></p>
+    <p>© <span id="year">2026</span> John Schneider Jiménez</p>
   </footer>
 
   <script src="app.js"></script>
